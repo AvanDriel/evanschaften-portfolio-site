@@ -1,0 +1,660 @@
+/*Global*/
+
+    @font-face {
+        font-family: "Helvetica Neue";
+        src: url(../Fonts/HelveticaNeue.ttf);
+    }
+
+    @font-face {
+        font-family: "Helvetica Neue Thin";
+        src: url(../Fonts/HelveticaNeueThin.ttf);
+    }
+
+    .noScroll {
+        height: 100%;
+    }
+
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+    }
+
+    .background {
+            background: url(../Img/global/background.jpg) no-repeat center center fixed;
+            -webkit-background-size:cover;
+            background-size:cover;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+            margin-bottom: 0px;
+    }
+
+    .backgroundFade {
+        background: url(../Img/global/background_fade.jpg) no-repeat center center fixed;
+        -webkit-background-size:cover;
+        background-size:cover;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .spacer {
+        height: 10vh;
+    }
+
+    .spacer_small {
+        height: 5vh;
+    }
+
+    .spacer_big {
+        height: 20vh;
+    }
+    body, html {
+        overflow: auto!important;
+    }
+
+    iframe {
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+
+
+/*Header*/
+        header {
+            position: fixed;
+            width: 500px;
+            top: 0;
+            left: 0;
+            background-color: #59A8CE;
+            box-shadow: 10px 1px 15px;
+            border-bottom-right-radius: 50%;
+            z-index: 100;
+            height: 50px;
+            text-align: center;
+            font-family: "Helvetica Neue Thin";
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .backbutton {
+            height: 30px;
+            position: fixed;
+            z-index: 101;
+            left: 20px;
+            top: 10px;
+        }
+    /*End Header*/
+
+/*End Global*/
+
+/*Welcome Page*/
+
+    .welcome {
+        text-align: center;
+    }
+
+    .welcome_gif {
+        height: 30vh;
+        margin-top: 20vh;
+    }
+
+/*End Welcome Page*/
+
+/*Home Page*/
+
+    /*Buttons*/
+        .home_button {
+            background : #FFFFFF;
+            background : rgba(255, 255, 255, 1);
+            border-radius : 12px;
+            -moz-border-radius : 12px;
+            -webkit-border-radius : 12px;
+            width: 20vw;
+            position: fixed;
+        }
+
+        .button_image {
+            margin-left:0;
+        }
+
+        #daily_process_button {
+            left: 10vw;
+            top:10vh;
+            animation: daily 10s infinite;
+        }
+
+        #textures_button {
+            left:40vw;
+            top:10vh;
+            animation-name: textures;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        #objects_button {
+            right:10vw;
+            top:10vh;
+            animation-name: objects;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        #about_contact_button {
+            width:30vw;
+            left:10vw;
+            bottom:40vh;
+            animation-name: aboutContact;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        #workshops_button {
+            right:10vw;
+            bottom:40vh;
+            animation-name: workshops;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+        }
+
+        #movingimage_button {
+            bottom: 40vh;
+            left: 40vw;
+        }
+    /*End Buttons*/
+
+    /*Breaking News bar*/
+        .breaking_news{
+            width:100vw;
+            height: 32px;
+            background-color: black;
+            position:fixed;
+            bottom: 10px;
+        }
+
+        .breaking_news p {
+            /* Starting position */
+            -moz-transform:translateX(100%);
+            -webkit-transform:translateX(100%);
+            transform:translateX(100%);
+            /* Apply animation to this element */
+            -moz-animation: scroll-right 25s linear infinite;
+            -webkit-animation: scroll-right 25s linear infinite;
+            animation: scroll-right 25s linear infinite;
+            font-family:"Helvetica Neue";
+            color: #FFFF85;
+            padding-top: 5px;
+            font-weight:bold;
+        }
+
+        .breaking_news p a{
+            color: #FFFF85;
+        }
+
+        .webshop-link {
+            margin-right: 200px;
+        }
+
+        .instagram-link {
+            margin-right: 200px;
+        }
+    /*End Breaking News Bar*/
+
+    /*Homepage Animations*/
+        @keyframes daily {
+            0%      {left:10vw; top:10vh;}
+            33%     {left:12vw; top:20vh;}
+            66%     {left:7vw; top:20vh;}
+            100%    {left:10vw; top:10vh;}
+        }
+
+        @keyframes textures {
+            0%      {left:40vw;top:10vh;}
+            25%     {left:40vw;top:13vh;}
+            50%     {left:35vw;top:20vh;}
+            75%     {left:45vw;top:13vh;}
+            100%    {left:40vw;top:10vh;}
+        }
+
+        @keyframes objects {
+            0%      {right:10vw;top:10vh;}
+            25%     {right:5vw;top:20vh;}
+            50%     {right:8vw;top:15vh;}
+            75%     {right:15vw;top:13vh;}
+            100%    {right:10vw;top:10vh;}
+        }
+
+        @keyframes aboutContact {
+            0%      {left:10vw;bottom:40vh;}
+            25%     {left:5vw;bottom:45vh;}
+            50%     {left:2vw;bottom:20vh;}
+            75%     {left:12vw;bottom:30vh;}
+            100%    {left:10vw;bottom:40vh;}
+        }
+
+        @keyframes workshops {
+            0%      {right:10vw;bottom:40vh;}
+            25%     {right:12vw;bottom:32vh;}
+            50%     {right:8vw;bottom:20vh;}
+            75%     {right:4vw;bottom:35vh;}
+            100%    {right:10vw;bottom:40vh;}
+        }
+    /*End Homepage animations/*
+
+    /*Breaking News Bar Animation*/
+        @-moz-keyframes scroll-right {
+            0%   { -moz-transform: translateX(100%); }
+            100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes scroll-right {
+            0%   { -webkit-transform: translateX(100%); }
+            100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes scroll-right {
+            0%   {
+                -moz-transform: translateX(100%); /* Browser bug fix */
+                -webkit-transform: translateX(100%); /* Browser bug fix */
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%); /* Browser bug fix */
+                -webkit-transform: translateX(-100%); /* Browser bug fix */
+                transform: translateX(-100%);
+            }
+        }
+    /*End Breaking News Bar Animations*/
+
+    /*Mobile Home page*/
+
+    .project_button_mobile {
+        width: 80vw;
+    }
+
+    .instagram_button_mobile {
+        width: 30vw;
+    }
+
+
+    .mobileFooter p {
+        font-family: "Helvetica Neue Thin";
+        font-size: 30px;
+    }
+
+    /*End Mobile Home page*/
+/*End Home Page*/
+
+/*Project Page*/
+
+    .project img {
+        width: 60vw;
+    }
+
+    .projectDescription {
+        background:rgba(0,0,0,0.50);
+        color: white;
+        width: 50vw;
+        padding: 20px;
+        font-family: "Helvetica Neue";
+        margin: 0 auto;
+    }
+
+    .projectDescription p {
+        font-size: 18px;
+    }
+
+/*End Project Page*/
+
+/*About page*/
+
+    /* Flip Animation*/
+
+    /* entire container, keeps perspective */
+    .flip-container {
+        perspective: 1000px;
+    }
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+    .flip-container, .front, .back {
+        width: 665px;
+        height: 941px;
+    }
+
+    /* flip speed goes here */
+    .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+        position: relative;
+    }
+
+    /* hide back of pane during swap */
+    .front, .back {
+        backface-visibility: hidden;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* front pane, placed above back */
+    .front {
+        z-index: 2;
+        /* for firefox 31 */
+        transform: rotateY(0deg);
+    }
+
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(180deg);
+    }
+
+    .flip_image {
+        width: 665px;
+        height: 941px;
+    }
+
+    .back {
+        background-color: white;
+    }
+
+    p {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+        transform: rotateY(180deg);
+    }
+
+/*End about page*/
+
+/*Objects Page*/
+
+    .object_highlight_img {
+        height: 350px;
+        background-color: white;
+    }
+
+
+/*End Objects Page*/
+
+/*Highlight Buttons*/
+
+    .highlight_img_wrapper {
+        margin-bottom: 50px;
+    }
+
+    .highlight_img {
+        height: 350px;
+        background-color: white;
+    }
+
+    /*Animations*/
+        .grow { transition: all .2s ease-in-out; }
+
+        .grow:hover { transform: scale(1.2); }
+
+/*End Highlight Buttons*/
+
+/*Moving Image*/
+
+.iframe_movingimage{
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+/*End Moving Image*/
+
+/*Workshops*/
+    /*Workshop index*/
+        .workshop {
+            background-color: #78c7ed;
+            width: auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .workshop_title {
+            background-color: #59A8CE;
+            margin-top:20px;
+            text-align: center;
+        }
+
+        .workshop img {
+            height: 200px;
+            margin-right: 15px;
+            float: left;
+        }
+
+        .reservation-button {
+            float: right;
+        }
+
+    /*End Workshop index*/
+
+    /*Reservation Page*/
+        .reservation {
+            background-color: whitesmoke;
+            padding: 20px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .reservation-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .reservation-content {
+            text-align: right;
+            margin-right: 100px;
+            font-family: Tahoma;
+        }
+
+
+        .data-field {
+            margin: 10px;
+        }
+
+        .data-submit {
+            margin-right: 10px;
+        }
+
+        .title-tag {
+            display: none;
+        }
+    /*End Reservation Page*/
+
+    /*Reservation Confirmation*/
+
+        .confirmation-box {
+            background-color: whitesmoke;
+            padding: 20px;
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    /*End Reservation Confirmation
+/*Workshops*/
+
+/*Admin*/
+
+    .backgroundAdmin {
+        background: url(../Img/global/background_fade.jpg) no-repeat center center fixed;
+        -webkit-background-size:cover;
+        background-size:cover;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 0px;
+    }
+    /*Admin Login*/
+
+        .form-signin {
+            max-width: 400px;
+            padding: 30px;
+            margin: 0 auto;
+            color: #017572;
+            background-color: whitesmoke;
+        }
+
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin: 10px;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+        }
+
+    /*End Admin Login*/
+
+    /*header admin*/
+        .header-admin {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            height: 50px;
+            width: 100vw;
+            background-color: #59A8CE;
+            box-shadow: 10px 1px 15px;
+        }
+
+        .header-admin h1 {
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        .header-admin h3 {
+            position: fixed;
+            display: inline-block;
+            right: 10px;
+            color: black;
+        }
+
+        .header-admin a {
+            margin: 0;
+            padding: 0;
+        }
+    /*end header admin*/
+
+    /*current reservations box*/
+
+        .current-reservations {
+            background-color: whitesmoke;
+        }
+
+        .current-reservations-header h1 {
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
+        .current-reservations-content {
+            margin-left: 20px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        table{
+            font-size: 20px;
+            width: 100%;
+        }
+
+    /*end current reservations box*/
+
+    /*account data box*/
+        .account-data {
+            background-color: whitesmoke;
+        }
+
+        .account-data-header h1 {
+            font-size: 25px;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        .change-form {
+            text-align: right;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+    /*End account data box*/
+
+    /*Workshop Edit*/
+
+        .workshop-data-header {
+            font-size: 25px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .workshop-data {
+            background-color: whitesmoke;
+        }
+
+        .workshop1-data {
+            text-align: right;
+        }
+
+        .form-wrapper{
+            text-align: right;
+            width: 400px;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 400px;
+            max-width: 400px;
+        }
+
+        #description {
+            height: 200px;
+        }
+
+        .id-tag {
+            display: none;
+        }
+
+    /*End Workshop Edit*/
+/*End Admin*/
