@@ -11,6 +11,11 @@ I did make a seperate main page for mobile, because of the style of the original
 The reservation page shows two workshops, which it gets from a database. When you click on the reservation button, you get redirected to a page where you fill in your name, email and the date you want to pick. These dates are also from the database, where they are set by the Admin using the admin side of the system. This reservation then gets sent to the database.
 
 # Admin panel and CMS
+![login screen](https://imgur.com/oBHBNao.png)
 To access the Admin panel you need to login using the admin credentials. Upon a successful login a session is started to give you access to the other pages (There is verification for this session on every admin page). On the first page is a list of all the reservations users sent to the database, with a delete button to delete the reservation.
+![Reservations](https://imgur.com/ZgaXplL.png)
 On the Account tab, it is possible to change the admin login credentials. The password is hashed using the php "password_hash" function.
+![Account tab](https://imgur.com/60e9qE3.png)
 On the last tab is the little cms-like system. Here you can change the title, description and dates for the two workshops visible for the users. This gets stored in the database after which it can be seen by users.
+![cms page](https://imgur.com/Ta7dI7F.png)
+Finally the logout button ends your session and sends you back to the admin login screen.
