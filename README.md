@@ -3,7 +3,7 @@
 # About this project
 This project was originally an assignmet from school, where I had to built a small reservation system using php, with a small content management system. We had to find a 'real' client to build this for, so i decided to do this for a friend of mine. When we did a little brainstorm on what the reservation system should be about, we decided to make it about fictional workshops. After that out brainstorm session got a little out of hand and I ended up building an entire portfolio website.
 
-# The website and it's design
+# The website and its design
 Erik is a student at an art school, so he wanted to desing the website and wanted it to represent 'him'. The moving elements, colors and everything visual was designed by him. It was a cool opportunity for me, because it was something entirely different than your average website, and I got to do some wacky animation work. The code behind it is nothing very special, and mainly basic html/css/js.
 I did make a seperate main page for mobile, because of the style of the original main page with its animation.
 
