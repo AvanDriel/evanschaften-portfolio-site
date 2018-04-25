@@ -1,4 +1,4 @@
-# Erik van Schaften Porfolio site with reservation system and small cms.
+# Erik van Schaften Porfolio site with reservation system and small cms. See it live! http://erikvanschaften.nl
 
 # About this project
 This project was originally an assignmet from school, where I had to built a small reservation system using php, with a small content management system. We had to find a 'real' client to build this for, so i decided to do this for a friend of mine. When we did a little brainstorm on what the reservation system should be about, we decided to make it about fictional workshops. After that out brainstorm session got a little out of hand and I ended up building an entire portfolio website.
